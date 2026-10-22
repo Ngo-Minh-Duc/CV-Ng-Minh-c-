@@ -1,210 +1,299 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CV cá nhân của Ngô Đặng Minh Đức">
-  <title>Ngô Đặng Minh Đức | My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website CV cá nhân của Ngô Đặng Minh Đức, sinh viên ngành Công nghệ thông tin.">
+    <title>Ngô Đặng Minh Đức | My Kawaii CV</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font chữ phong cách dễ thương -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">Duc<span>.dev ♡</span></a>
+    <!-- Thanh điều hướng -->
+    <header class="navbar">
+        <a href="#home" class="logo">♡ Minh Đức</a>
 
-    <button class="menu-toggle" id="menuToggle"
-      aria-label="Mở menu" aria-expanded="false">☰</button>
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Mở menu" aria-expanded="false">
+            ☰
+        </button>
 
-    <nav id="navMenu">
-      <a href="#about">Giới thiệu</a>
-      <a href="#skills">Kỹ năng</a>
-      <a href="#projects">Dự án</a>
-      <a href="#education">Học vấn</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
-  </header>
+        <nav class="nav-links" id="nav-links">
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#education">Học vấn</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-text">
-        <span class="eyebrow">♡ WELCOME TO MY LITTLE WORLD ♡</span>
-        <h1>Xin chào!<br>Mình là <span>Ngô Đặng Minh Đức</span></h1>
-        <h2>Sinh viên Công nghệ thông tin</h2>
-        <p>
-          Chào mừng bạn đến với góc nhỏ của mình!
-          Mình yêu thích công nghệ, thiết kế website
-          và đang từng bước phát triển kỹ năng lập trình.
-        </p>
+    <main>
+        <!-- Phần giới thiệu -->
+        <section class="hero section" id="home">
+            <div class="hero-text">
+                <span class="kawaii-label">✧ Welcome to my little world ✧</span>
 
-        <div class="hero-buttons">
-          <a class="btn primary" href="#projects">Xem dự án ✨</a>
-          <a class="btn secondary" href="#contact">Liên hệ với mình</a>
-        </div>
-      </div>
+                <p class="hello">Xin chào, mình là</p>
+                <h1>Ngô Đặng <span>Minh Đức</span></h1>
 
-      <div class="avatar-card">
-        <img
-  class="avatar-placeholder avatar-image"
-  src="images/avatar.jpg"
-  alt="Ảnh đại diện Ngô Đặng Minh Đức"
->
-        <p>Nice to meet you!</p>
-        <span>✦ Keep learning, keep growing ✦</span>
-      </div>
+                <h2>IT Student <span class="sparkle">♡</span></h2>
 
-      <span class="floating heart-one">♡</span>
-      <span class="floating heart-two">✦</span>
-    </section>
+                <p class="hero-description">
+                    Mình là sinh viên ngành Công nghệ thông tin, yêu thích
+                    công nghệ, lập trình và sáng tạo những sản phẩm web
+                    nhỏ xinh, hữu ích.
+                </p>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <span>ABOUT ME</span>
-        <h2>Đôi điều về mình 🌷</h2>
-      </div>
+                <div class="hero-buttons">
+                    <a href="#about" class="button button-primary">Khám phá mình ♡</a>
+                    <a href="#contact" class="button button-outline">Liên hệ với mình</a>
+                </div>
 
-      <div class="about-card">
-        <p>
-          Mình là Ngô Đặng Minh Đức. Mình đang học tập và
-          khám phá lĩnh vực Công nghệ thông tin, đặc biệt là
-          lập trình web và phát triển phần mềm.
-        </p>
-        <p>
-          Mục tiêu của mình là xây dựng những sản phẩm hữu ích,
-          có giao diện đẹp và không ngừng học hỏi công nghệ mới.
-        </p>
-      </div>
-    </section>
+                <p class="tiny-note">૮ ˶ᵔ ᵕ ᵔ˶ ა &nbsp; Dream • Learn • Create</p>
+            </div>
 
-    <section class="section" id="skills">
-      <div class="section-heading">
-        <span>MY SKILLS</span>
-        <h2>Kỹ năng của mình 💻</h2>
-      </div>
+            <div class="hero-art">
+                <div class="decor decor-star">✦</div>
+                <div class="decor decor-heart">♥</div>
 
-      <div class="skill-grid">
-        <article class="skill-card">
-          <div class="skill-icon">🌐</div>
-          <h3>HTML</h3>
-          <p>Cấu trúc trang web</p>
-          <div class="progress"><span style="width:65%"></span></div>
-        </article>
+                <div class="profile-card">
+                    <!-- Thay ảnh này bằng ảnh đại diện của bạn nếu muốn -->
+                    <div class="avatar-placeholder">
+    <img
+        src="images/avatar.jpg"
+        alt="Avatar của Ngô Đặng Minh Đức"
+        class="avatar-img"
+    />
+</div>
 
-        <article class="skill-card">
-          <div class="skill-icon">🎨</div>
-          <h3>CSS</h3>
-          <p>Thiết kế giao diện</p>
-          <div class="progress"><span style="width:55%"></span></div>
-        </article>
+                    <h3>Nice to meet you!</h3>
+                    <p>Future IT Developer ✧</p>
+                </div>
 
-        <article class="skill-card">
-          <div class="skill-icon">⚡</div>
-          <h3>JavaScript</h3>
-          <p>Tương tác website</p>
-          <div class="progress"><span style="width:35%"></span></div>
-        </article>
+                <div class="floating-note">୨୧ Keep growing!</div>
+            </div>
+        </section>
 
-        <article class="skill-card">
-          <div class="skill-icon">🐙</div>
-          <h3>Git & GitHub</h3>
-          <p>Quản lý mã nguồn</p>
-          <div class="progress"><span style="width:40%"></span></div>
-        </article>
-      </div>
-      <p class="note">Hãy chỉnh các mức kỹ năng cho đúng với năng lực thực tế của bạn.</p>
-    </section>
+        <!-- Giới thiệu bản thân -->
+        <section class="section" id="about">
+            <div class="section-heading">
+                <span class="kawaii-label">A little about me</span>
+                <h2>Giới thiệu <span>bản thân</span></h2>
+                <p>Một chút thông tin về mình nè ♡</p>
+            </div>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <span>MY PROJECTS</span>
-        <h2>Những dự án nhỏ 🌟</h2>
-      </div>
+            <div class="about-card">
+                <div class="about-icon">🌸</div>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-art pink">🌸</div>
-          <div class="project-content">
-            <span class="tag">HTML · CSS</span>
-            <h3>Website CV cá nhân</h3>
-            <p>Website giới thiệu bản thân và các kỹ năng của mình.</p>
-            <a href="https://github.com/" target="_blank"
-              rel="noopener noreferrer">Xem GitHub ↗</a>
-          </div>
-        </article>
+                <div>
+                    <h3>Xin chào! Rất vui được gặp bạn.</h3>
 
-        <article class="project-card">
-          <div class="project-art purple">🎮</div>
-          <div class="project-content">
-            <span class="tag">Dự án học tập</span>
-            <h3>Dự án số 2</h3>
-            <p>Thay nội dung này bằng một bài tập hoặc sản phẩm bạn đã làm.</p>
-            <a href="https://github.com/" target="_blank"
-              rel="noopener noreferrer">Xem GitHub ↗</a>
-          </div>
-        </article>
+                    <p>
+                        Mình là <strong>Ngô Đặng Minh Đức</strong>, hiện đang
+                        học ngành <strong>Công nghệ thông tin</strong> tại
+                        <strong>Đại học Công nghệ Thông tin và Truyền thông</strong>.
+                    </p>
 
-        <article class="project-card">
-          <div class="project-art yellow">💡</div>
-          <div class="project-content">
-            <span class="tag">Đang phát triển</span>
-            <h3>Dự án số 3</h3>
-            <p>Giới thiệu ngắn gọn về mục tiêu và công nghệ của dự án.</p>
-            <a href="https://github.com/" target="_blank"
-              rel="noopener noreferrer">Xem GitHub ↗</a>
-          </div>
-        </article>
-      </div>
-    </section>
+                    <p>
+                        Mình đang từng bước xây dựng nền tảng kiến thức về
+                        lập trình, phát triển website và các công nghệ phần mềm.
+                        Mình mong muốn được học hỏi thêm thông qua bài tập,
+                        dự án cá nhân và những trải nghiệm thực tế.
+                    </p>
 
-    <section class="section" id="education">
-      <div class="section-heading">
-        <span>EDUCATION</span>
-        <h2>Học vấn 🎓</h2>
-      </div>
+                    <p>
+                        Mục tiêu của mình là phát triển kỹ năng lập trình,
+                        tư duy giải quyết vấn đề và trở thành một lập trình viên
+                        có thể tạo ra những sản phẩm hữu ích.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="timeline-dot">♡</span>
-          <div>
-            <h3>Ngành Công nghệ thông tin</h3>
-            <p>Điền tên trường của bạn</p>
-            <p class="muted">Điền thời gian học</p>
-            <p>Đang học tập, rèn luyện kỹ năng lập trình và thực hiện các dự án.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Kỹ năng -->
+        <section class="section section-soft" id="skills">
+            <div class="section-heading">
+                <span class="kawaii-label">My learning journey</span>
+                <h2>Kỹ năng <span>của mình</span></h2>
+                <p>Những công nghệ mình đang học và thực hành.</p>
+            </div>
 
-    <section class="section contact-section" id="contact">
-      <div class="section-heading">
-        <span>CONTACT ME</span>
-        <h2>Kết nối với mình 💌</h2>
-      </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>Xây dựng cấu trúc trang web.</p>
+                    <span class="skill-tag">Đang học</span>
+                </article>
 
-      <div class="contact-card">
-        <p>Bạn muốn trao đổi hoặc xem thêm các sản phẩm của mình?</p>
-        <a class="btn primary" href="mailto:email-cua-ban@example.com">
-          Gửi email ♡
-        </a>
-        <a class="contact-link" href="https://github.com/"
-          target="_blank" rel="noopener noreferrer">
-          GitHub của mình ↗
-        </a>
-      </div>
-    </section>
-  </main>
+                <article class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>Thiết kế giao diện và bố cục website.</p>
+                    <span class="skill-tag">Đang học</span>
+                </article>
 
-  <footer>
-    <p>Made with ♡ by Ngô Đặng Minh Đức</p>
-    <p>© <span id="year"></span> All rights reserved.</p>
-  </footer>
+                <article class="skill-card">
+                    <div class="skill-icon">✨</div>
+                    <h3>JavaScript</h3>
+                    <p>Tạo tương tác cho trang web.</p>
+                    <span class="skill-tag">Đang học</span>
+                </article>
 
-  <button id="backToTop" aria-label="Lên đầu trang">↑</button>
+                <article class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Quản lý mã nguồn và lưu trữ dự án.</p>
+                    <span class="skill-tag">Đang thực hành</span>
+                </article>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <!-- Dự án -->
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <span class="kawaii-label">Made with love</span>
+                <h2>Dự án <span>của mình</span></h2>
+                <p>Một số dự án học tập và thực hành cá nhân.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-banner banner-pink">♡</div>
+                    <div class="project-content">
+                        <span class="project-type">Personal Website</span>
+                        <h3>Website CV cá nhân</h3>
+                        <p>
+                            Website giới thiệu bản thân được xây dựng bằng
+                            HTML, CSS và JavaScript với phong cách kawaii
+                            hồng pastel.
+                        </p>
+                        <div class="tag-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Ngo-Minh-Duc/CV-Ng-Minh-c-"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">Xem trên GitHub ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-banner banner-purple">✧</div>
+                    <div class="project-content">
+                        <span class="project-type">Learning Project</span>
+                        <h3>Dự án học tập</h3>
+                        <p>
+                            Nơi mình có thể bổ sung các bài tập lập trình,
+                            bài thực hành và sản phẩm cá nhân trong quá trình học.
+                        </p>
+                        <div class="tag-list">
+                            <span>Programming</span>
+                            <span>Practice</span>
+                        </div>
+                        <a href="https://github.com/Ngo-Minh-Duc"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">Xem GitHub của mình ↗</a>
+                    </div>
+                </article>
+            </div>
+
+            <p class="section-footnote">
+                ♡ Khi có dự án mới, hãy thêm tên dự án, công nghệ sử dụng
+                và đường dẫn thật vào phần này nhé.
+            </p>
+        </section>
+
+        <!-- Học vấn -->
+        <section class="section section-soft" id="education">
+            <div class="section-heading">
+                <span class="kawaii-label">My education</span>
+                <h2>Học <span>vấn</span></h2>
+                <p>Hành trình học tập của mình.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">♡</div>
+                    <div class="timeline-card">
+                        <span class="timeline-label">Đang học</span>
+                        <h3>Đại học Công nghệ Thông tin và Truyền thông</h3>
+                        <p class="major">Ngành Công nghệ thông tin</p>
+                        <p>
+                            Học tập kiến thức nền tảng về công nghệ thông tin,
+                            lập trình và phát triển phần mềm.
+                        </p>
+                        <p class="timeline-date">
+                            Thời gian học: <strong>Bổ sung năm bắt đầu – năm dự kiến tốt nghiệp</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Liên hệ -->
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <span class="kawaii-label">Let's connect!</span>
+                <h2>Liên hệ <span>với mình</span></h2>
+                <p>Cảm ơn bạn đã ghé thăm website nhỏ của mình ♡</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:ngodangminhduc2111@gmail.com">
+                            ngodangminhduc2111@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">💻</span>
+                    <div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Ngo-Minh-Duc/CV-Ng-Minh-c-"
+                           target="_blank" rel="noopener noreferrer">
+                            github.com/Ngo-Minh-Duc
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">🎓</span>
+                    <div>
+                        <h3>Chuyên ngành</h3>
+                        <p>Công nghệ thông tin</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="contact-message">
+                “Keep learning, keep creating, and keep shining!” ✨
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made with ♡ by <strong>Ngô Đặng Minh Đức</strong></p>
+        <p>© <span id="current-year"></span> My Kawaii CV. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"
+            aria-label="Quay lại đầu trang" title="Lên đầu trang">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>

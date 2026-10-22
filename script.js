@@ -1,48 +1,52 @@
+// Lấy các thành phần HTML cần sử dụng
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+const backToTop = document.getElementById("back-to-top");
+const currentYear = document.getElementById("current-year");
 
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
-const backToTop = document.getElementById("backToTop");
-const year = document.getElementById("year");
+// Hiển thị năm hiện tại ở chân trang
+currentYear.textContent = new Date().getFullYear();
 
-// Hiển thị năm hiện tại ở cuối trang
-year.textContent = new Date().getFullYear();
+// Mở hoặc đóng menu trên điện thoại
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
 
-// Mở và đóng menu trên điện thoại
-menuToggle.addEventListener("click", () => {
-  const isOpen = navMenu.classList.toggle("open");
+    const isOpen = navLinks.classList.contains("active");
 
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.setAttribute(
-    "aria-label",
-    isOpen ? "Đóng menu" : "Mở menu"
-  );
-  menuToggle.textContent = isOpen ? "✕" : "☰";
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Đóng menu" : "Mở menu"
+    );
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
-// Đóng menu sau khi chọn một mục
-navMenu.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Mở menu");
-    menuToggle.textContent = "☰";
-  });
+// Đóng menu sau khi bấm vào một liên kết
+const navItems = document.querySelectorAll(".nav-links a");
+
+navItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Mở menu");
+        menuToggle.textContent = "☰";
+    });
 });
 
-// Nút quay lại đầu trang
-function updateBackToTop() {
-  backToTop.classList.toggle("visible", window.scrollY > 300);
-}
-
-window.addEventListener("scroll", updateBackToTop, {
-  passive: true
+// Hiện nút quay lại đầu trang khi cuộn xuống
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
 });
 
-updateBackToTop();
-
-backToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+// Bấm nút để quay lại đầu trang
+backToTop.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
